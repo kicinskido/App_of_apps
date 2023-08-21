@@ -52,12 +52,12 @@ pipeline {
             }
         }
 
-        // stage('Selenium tests') {
-        //     steps {
-        //         sh "pip3 install -r test/selenium/requirements.txt"
-        //         sh "python3 -m pytest test/selenium/frontend_test"
-        //     }
-        // }
+        stage('Selenium tests') {
+            steps {
+                sh "pip3 install -r test/selenium/requirements.txt"
+                sh "python3 -m pytest test/selenium/frontend_test"
+            }
+        }
         stage('Run terraform') {
             steps {
                 dir('Terraform') {                
