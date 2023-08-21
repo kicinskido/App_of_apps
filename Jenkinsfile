@@ -55,7 +55,7 @@ pipeline {
         stage('Selenium tests') {
             steps {
                 sh "pip3 install -r test/selenium/requirements.txt"
-                sh "python3 -m pytest test/selenium/frontend_test"
+                sh "python3 -m pytest /home/panda/App_of_apps/test/selenium/frontend_test"
             }
         }
     }
