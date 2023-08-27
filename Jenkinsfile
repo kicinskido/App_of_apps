@@ -55,7 +55,7 @@ pipeline {
         stage('Selenium tests') {
             steps {
                 sh "pip3 install -r test/selenium/requirements.txt"
-                sh "python3 -m pytest test/selenium/frontend_test.py"
+                sh "python3 -m pytest test/selenium/frontend_test"
             }
         }
         stage('Run terraform') {
