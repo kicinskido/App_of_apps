@@ -1,7 +1,7 @@
-def backendDockerTag=""
-def frontendDockerTag=""
 def frontendImage="kicinskido/frontend"
 def backendImage="kicinskido/backend"
+def backendDockerTag=""
+def frontendDockerTag=""
 def dockerRegistry=""
 def registryCredentials="Dockerhub"
 
